@@ -10,12 +10,16 @@ public class EnemyLife : MonoBehaviour
     private PlayerFiring firingScriptRef;
     //Ref to the enemy vfx script
     private EnemyVfx enemyVfx;
+    //Ref to the Scriptbale Object
+    public EnemyData enemyData;
 
     private void Start()
     {
-        //Gets the data
-        firingScriptRef = FindObjectOfType<PlayerFiring>();        
+        //Gets the data 
+        firingScriptRef = FindObjectOfType<PlayerFiring>();
         enemyVfx = GetComponent<EnemyVfx>();
+        //Overides life val
+        enemyHp = enemyData.shipHp;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
