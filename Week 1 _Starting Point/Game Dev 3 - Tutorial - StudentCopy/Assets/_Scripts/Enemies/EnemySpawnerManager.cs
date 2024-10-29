@@ -8,7 +8,5 @@ public class EnemySpawnerManager : MonoBehaviour
     [SerializeField] float delayBetweenSpawns;
     [SerializeField] int numberOfEnemiesSpawned;
     [SerializeField] float delaybetweenWaves;
-    [SerializeField] 
-    [SerializeField]
-    [SerializeField]
+
 }
