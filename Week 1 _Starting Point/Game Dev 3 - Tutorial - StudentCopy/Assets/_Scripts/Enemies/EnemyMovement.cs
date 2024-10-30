@@ -1,6 +1,5 @@
 using UnityEngine;
 
-
 namespace GameDevWithReece.Enemy
 {
     public class EnemyMovement : MonoBehaviour
@@ -10,6 +9,7 @@ namespace GameDevWithReece.Enemy
         //Reference to enemy data
         public EnemyData enemyData;
 
+        
         private void Start()
         {
 
@@ -17,6 +17,10 @@ namespace GameDevWithReece.Enemy
 
         }
 
+        private void Update()
+        {
+            incomingBullet();
+        }
         private void FixedUpdate()
         {
             //Does not execute the rest of the code if this check is true
@@ -25,7 +29,10 @@ namespace GameDevWithReece.Enemy
             Movement();
         }
 
-
+        void incomingBullet()
+        {
+            Debug.DrawRay(transform.position, Vector3.zero);
+        }
         void Movement()
         {
             //To store the position before the movement
