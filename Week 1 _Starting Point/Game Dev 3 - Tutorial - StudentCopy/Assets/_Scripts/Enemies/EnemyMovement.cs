@@ -76,7 +76,7 @@ namespace GameDevWithReece.Enemy
             {
                 //generate a random number based on the amount of items in dodgeTransforms
                 int randomInt = Random.Range(0, dodgeTransforms.Count);
-                Debug.Log(randomInt);
+
                 //new position to move to is equal to randomInt in dodgeTransforms
                 pos.x = dodgeTransforms[randomInt].position.x ;
                 transform.position = pos;
