@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace GameDevWithReece.Enemy
@@ -6,7 +7,7 @@ namespace GameDevWithReece.Enemy
     public class EnemySpawnerManager : MonoBehaviour
     {
         //Array of available spawnPoints
-        [SerializeField] Transform[] spawnPoints;
+        [SerializeField] List<Transform> spawnPoints;
 
         //Floats that are used as Delays
         [SerializeField] float delayBetweenSpawns;
@@ -39,11 +40,11 @@ namespace GameDevWithReece.Enemy
             for (int i = 0; i < numberOfEnemiesToSpawn; i++)
             {
                 // Local variable to use for "random" spawn points
-                int randomInt = Random.Range(0, spawnPoints.Length - 1);
+                int randomInt = Random.Range(0, spawnPoints.Count - 1);
 
                 // Creates the ship in game at one of the positions in spawnPoints
                 GameObject spawnedShip = Instantiate(enemyPrefab, spawnPoints[randomInt]);
-                print("in");
+
                 // changes all the variables of the spawnedShip to be equal to the variables stored on the prefab
                 spawnedShip.GetComponent<EnemyVisual>().enemyData = enemyData[currentWaveCount];
                 spawnedShip.GetComponent<EnemyMovement>().enemyData = enemyData[currentWaveCount];
