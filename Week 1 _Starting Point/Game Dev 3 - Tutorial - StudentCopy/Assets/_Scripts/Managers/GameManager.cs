@@ -1,7 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Events;
 public class GameManager : MonoBehaviour
 {
     //By making the bool static and public, we can access the variable from anywhere without referencing
@@ -9,10 +7,15 @@ public class GameManager : MonoBehaviour
     //For example, do not use static for the enemyHp variable, since there would be more than on!
     public static bool isGameOn = false;
 
-
+    //Used to execute scrips at game start
+    public UnityEvent gameStarted;
     public void GameIsOn()
     {
         isGameOn = true;
+
+        //Invokes UnityEvent
+        gameStarted.Invoke();
+        Debug.Log(gameStarted);
     }
 
     public void GameIsOff()

@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d5e08d5ba2c060344aa7a711faceb630, type: 3}
-  m_Name: SpaceShip
+  m_Name: GreyShip
   m_EditorClassIdentifier: 
   shipSprite: {fileID: -203252155, guid: 0cdc11648b682ce44b238fd9d78bb1b5, type: 3}
-  shipSpeed: 5
-  shipHP: 20
+  shipSpeed: 1
+  shipHp: 5
