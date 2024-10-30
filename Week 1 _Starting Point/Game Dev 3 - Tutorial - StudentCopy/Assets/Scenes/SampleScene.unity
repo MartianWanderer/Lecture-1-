@@ -6165,6 +6165,37 @@ Transform:
   - {fileID: 1864039175}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1333249073
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1333249074}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1333249074
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333249073}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.49361455, y: 1.2897162, z: 0.095675014}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1440588570
 GameObject:
   m_ObjectHideFlags: 0
@@ -6224,7 +6255,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5f71b923a43d8b149ad0322adcb53683, type: 2}
   - {fileID: 11400000, guid: b0f7a589de9580648a1b79c88a14dca5, type: 2}
   - {fileID: 11400000, guid: b6df6d774ccff274ea1c4188ad6ca54a, type: 2}
-  numberOfEnemiesToSpawn: 1
+  numberOfEnemiesToSpawn: 3
 --- !u!1 &1488446992
 GameObject:
   m_ObjectHideFlags: 0
@@ -10135,3 +10166,4 @@ SceneRoots:
   - {fileID: 1551061802}
   - {fileID: 1488446993}
   - {fileID: 1217189391}
+  - {fileID: 1333249074}

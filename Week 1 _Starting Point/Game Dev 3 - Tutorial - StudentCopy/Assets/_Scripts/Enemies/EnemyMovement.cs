@@ -39,8 +39,6 @@ namespace GameDevWithReece.Enemy
             //Does not execute the rest of the code if this check is true
             if (Managers.GameManager.isGameOn == false) return;
 
-
-
         }
 
         void incomingBullet()
