@@ -47,6 +47,6 @@ Material:
     m_Floats:
     - _Blur: 0.00357
     - _ScanLine_Speed: 0.107
-    - _Scanline_Amount: 274
+    - _Scanline_Amount: 112
     m_Colors: []
   m_BuildTextureStacks: []
