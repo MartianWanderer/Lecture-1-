@@ -1,12 +1,15 @@
 using UnityEngine;
 
-public class BulletShredder : MonoBehaviour
+namespace GameDevWithReece.Managers
 {
-    private void OnTriggerEnter2D(Collider2D collision)
+    public class BulletShredder : MonoBehaviour
     {
-        if (collision.tag == "Bullet")
+        private void OnTriggerEnter2D(Collider2D collision)
         {
-            Destroy(collision.gameObject);
+            if (collision.tag == "Bullet")
+            {
+                Destroy(collision.gameObject);
+            }
         }
     }
 }

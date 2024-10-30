@@ -1,12 +1,14 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "EnemyData", menuName = "ScriptableObjects/EnemyData")]
-
-public class EnemyData : ScriptableObject
+namespace GameDevWithReece.Enemy
 {
+    [CreateAssetMenu(fileName = "EnemyData", menuName = "ScriptableObjects/EnemyData")]
+    public class EnemyData : ScriptableObject
+    {
 
-    public Sprite shipSprite;
-    public float shipSpeed;
-    public int shipHp;
+        public Sprite shipSprite;
+        public float shipSpeed;
+        public int shipHp;
 
+    }
 }

@@ -1,14 +1,17 @@
 using UnityEngine;
 
-public class EnemyVisual : MonoBehaviour
+namespace GameDevWithReece.Enemy
 {
-    SpriteRenderer spriteRenderer;
-
-    public EnemyData enemyData;
-
-    void Start()
+    public class EnemyVisual : MonoBehaviour
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        spriteRenderer.sprite = enemyData.shipSprite;
+        SpriteRenderer spriteRenderer;
+
+        public EnemyData enemyData;
+
+        void Start()
+        {
+            spriteRenderer = GetComponent<SpriteRenderer>();
+            spriteRenderer.sprite = enemyData.shipSprite;
+        }
     }
 }

@@ -1,21 +1,24 @@
 using UnityEngine;
 
-public class PlayerAnimation : MonoBehaviour
+namespace GameDevWithReece.player
 {
-    Animator shipAnimatorVariable;
-    PlayerMovement playerMovementScriptReference;
-
-    // Start is called before the first frame update
-    void Start()
+    public class PlayerAnimation : MonoBehaviour
     {
-        shipAnimatorVariable = GetComponent<Animator>();
-        playerMovementScriptReference = FindObjectOfType<PlayerMovement>();
-    }
+        Animator shipAnimatorVariable;
+        PlayerMovement playerMovementScriptReference;
 
-    // Update is called once per frame
-    void Update()
-    {
-        //Sets the parameter based on the boolean in the player movement script
-        shipAnimatorVariable.SetBool("amIMoving", playerMovementScriptReference.isShipMoving);
+        // Start is called before the first frame update
+        void Start()
+        {
+            shipAnimatorVariable = GetComponent<Animator>();
+            playerMovementScriptReference = FindObjectOfType<PlayerMovement>();
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+            //Sets the parameter based on the boolean in the player movement script
+            shipAnimatorVariable.SetBool("amIMoving", playerMovementScriptReference.isShipMoving);
+        }
     }
 }

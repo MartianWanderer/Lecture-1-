@@ -1,25 +1,29 @@
 using UnityEngine;
 using UnityEngine.Events;
-public class GameManager : MonoBehaviour
+
+namespace GameDevWithReece.Managers
 {
-    //By making the bool static and public, we can access the variable from anywhere without referencing
-    //Be careful with using static, since it makes sense when there is only one istance of this object in the whole project!
-    //For example, do not use static for the enemyHp variable, since there would be more than on!
-    public static bool isGameOn = false;
-
-    //Used to execute scrips at game start
-    public UnityEvent gameStarted;
-    public void GameIsOn()
+    public class GameManager : MonoBehaviour
     {
-        isGameOn = true;
+        //By making the bool static and public, we can access the variable from anywhere without referencing
+        //Be careful with using static, since it makes sense when there is only one istance of this object in the whole project!
+        //For example, do not use static for the enemyHp variable, since there would be more than on!
+        public static bool isGameOn = false;
 
-        //Invokes UnityEvent
-        gameStarted.Invoke();
-        Debug.Log(gameStarted);
-    }
+        //Used to execute scrips at game start
+        public UnityEvent gameStarted;
+        public void GameIsOn()
+        {
+            isGameOn = true;
 
-    public void GameIsOff()
-    {
-        isGameOn = false;
+            //Invokes UnityEvent
+            gameStarted.Invoke();
+            Debug.Log(gameStarted);
+        }
+
+        public void GameIsOff()
+        {
+            isGameOn = false;
+        }
     }
 }
