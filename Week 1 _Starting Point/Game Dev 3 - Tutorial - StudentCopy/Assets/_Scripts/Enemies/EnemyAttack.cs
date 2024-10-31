@@ -24,7 +24,6 @@ namespace GameDevWithReece.Enemy
         private void Update()
         {
             //Generates randomInt to select random firepoint 
-            int randomInt = Random.Range(0, firePoints.Count);
             attackPlayer();
         }
         private void attackPlayer()
@@ -37,26 +36,31 @@ namespace GameDevWithReece.Enemy
             }
             else if (player != null && player.collider.gameObject.tag == "Player" && canFire)
             {
+                randomInt = Random.Range(0, firePoints.Count);
                 Bullet();
                 MuzzleFlash();
                 canFire = false;
-                StartCoroutine(CoolDown());
+                
             }
         }
 
 
         private void Bullet()
         {
+
             //Spqwns the bullet
             var spawnedBullet = Instantiate(enemyBullet, firePoints[randomInt].position, Quaternion.identity);
             //Gets its rigidbody
             Rigidbody2D bulletRb = spawnedBullet.GetComponent<Rigidbody2D>();
             //Adds force to it so it can be actually yeeted away
             bulletRb.AddForce(-bulletSpeed, ForceMode2D.Impulse);
+            
+            
         }
 
         private void MuzzleFlash()
         {
+            
             //To get a random value so we can use it to give the muzzle flash a random rotation
             float randomRotation = Random.Range(0, 360);
             //Spawns the muzzleflash and stores it into a variable 

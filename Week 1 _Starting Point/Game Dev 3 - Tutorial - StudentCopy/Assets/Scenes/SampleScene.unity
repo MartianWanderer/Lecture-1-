@@ -10215,7 +10215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36dcb883cf01d334b8e32e0f1e17c046, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
+  moveSpeed: 4
   movement: {x: 0, y: 0}
   isShipMoving: 0
 --- !u!114 &2036823402
@@ -10354,7 +10354,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aaeea925d6b2e054c800326e84333320, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHP: 1
+  playerHP: 5
   GameManager: {fileID: 1971872103}
   TitleMover: {fileID: 259721538}
 --- !u!1660057539 &9223372036854775807
