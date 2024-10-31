@@ -26,9 +26,6 @@ namespace GameDevWithReece.Enemy
         //Int to keep track of how many enemies to spawn for that wave
         [SerializeField] int numberOfEnemiesToSpawn;
 
-
-
-
         public void StartWaves()
         {
             StartCoroutine(SpawnWaves());

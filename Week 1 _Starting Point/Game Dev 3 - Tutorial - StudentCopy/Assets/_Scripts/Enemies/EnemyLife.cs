@@ -1,5 +1,6 @@
 using UnityEngine;
 using GameDevWithReece.player;
+using System.Collections;
 
 namespace GameDevWithReece.Enemy
 {
@@ -50,7 +51,5 @@ namespace GameDevWithReece.Enemy
                 enemyHp -= hpToRemove;
             }
         }
-
-
     }
 }

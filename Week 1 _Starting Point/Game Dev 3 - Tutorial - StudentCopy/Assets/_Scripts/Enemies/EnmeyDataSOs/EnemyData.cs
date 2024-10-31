@@ -9,6 +9,6 @@ namespace GameDevWithReece.Enemy
         public Sprite shipSprite;
         public float shipSpeed;
         public int shipHp;
-
+        public int damageAmount;
     }
 }

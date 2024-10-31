@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace GameDevWithReece.Managers
+namespace GameDevWithReece.Bullet
 {
     public class BulletShredder : MonoBehaviour
     {

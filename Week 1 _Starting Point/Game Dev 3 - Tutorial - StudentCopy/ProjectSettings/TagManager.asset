@@ -5,11 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - Bullet
+  - Enemy Bullet
+  - GameOver
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - Walls
